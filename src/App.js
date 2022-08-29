@@ -1,16 +1,19 @@
-import React  from "react";
-import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from "./components/Navbar"
-import AllRoutes from "./routes";
+import React from 'react'
+import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbar from './components/Navbar'
+import AllRoutes from './routes'
+import { BrowserRouter } from 'react-router-dom'
 
-const App = ()=>{
-    return (
-      <div>
+const App = () => {
+  return (
+    <div>
+      <BrowserRouter>
         <Navbar />
         {AllRoutes}
-      </div>
-    );
-  }
+      </BrowserRouter>
+    </div>
+  )
+}
 
-export default App;
+export default App
